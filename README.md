@@ -1,7 +1,6 @@
 # medical_app
 
-A new Flutter project.
-
+This is a medical app that aloows patients to book appointment with their doctors.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
