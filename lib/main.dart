@@ -12,6 +12,7 @@ class MedicalApp extends StatelessWidget {
       title: 'Medical App UI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+
         primaryColor: Colors.blue,
       ),
       home: const SplashScreen(),

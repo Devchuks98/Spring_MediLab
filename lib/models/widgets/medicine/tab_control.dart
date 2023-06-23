@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:medical_app/models/colors/MyColors.dart';
 import 'package:medical_app/models/widgets/medicine/suggest_drugs.dart';
 
 class TabBarWidget extends StatefulWidget {
@@ -58,13 +57,13 @@ class _TabBarWidgetState extends State<TabBarWidget> {
   Widget _buildTabContent(int index) {
     switch (index) {
       case 0:
-        return SingleChildScrollView(
-          physics: const BouncingScrollPhysics(),
+        return const SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
           child: Padding(
-            padding: const EdgeInsets.only(top: 5, bottom: 10),
+            padding: EdgeInsets.only(top: 5, bottom: 10),
             child: Column(
-              children: const [
+              children: [
                 Valdoxan(),
                 SizedBox(height: 10),
                 Antibiotic(),

@@ -30,7 +30,7 @@ class Presciption extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MedicinePage(),
+                          builder: (context) => const MedicinePage(),
                         ));
                   },
                   icon: const Icon(Icons.medication),

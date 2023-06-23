@@ -12,7 +12,7 @@ class WelcomeBack extends StatefulWidget {
 
 class _WelcomeBackState extends State<WelcomeBack> {
   bool _passwordVisible = false;
-  FocusNode _focusNode = FocusNode();
+  final FocusNode _focusNode = FocusNode();
 
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();

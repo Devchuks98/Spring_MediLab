@@ -57,9 +57,9 @@ class DoctorJohn extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               color: Colors.blueAccent,
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 //Calender icon
                 Icon(
                   Ionicons.calendar,
@@ -138,9 +138,9 @@ class DoctorJane extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               color: Colors.blueAccent,
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 //Calender icon
                 Icon(
                   Ionicons.calendar,
@@ -219,9 +219,9 @@ class DoctorDavid extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               color: Colors.blueAccent,
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 //Calender icon
                 Icon(
                   Ionicons.calendar,
@@ -300,9 +300,9 @@ class DoctorSarah extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               color: Colors.blueAccent,
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 //Calender icon
                 Icon(
                   Ionicons.calendar,

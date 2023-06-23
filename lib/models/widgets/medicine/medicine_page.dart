@@ -5,7 +5,7 @@ import 'package:medical_app/models/colors/MyColors.dart';
 import 'package:medical_app/models/widgets/medicine/tab_control.dart';
 
 class MedicinePage extends StatefulWidget {
-  MedicinePage({super.key});
+  const MedicinePage({super.key});
 
   @override
   State<MedicinePage> createState() => _MedicinePageState();
@@ -14,7 +14,7 @@ class MedicinePage extends StatefulWidget {
 class _MedicinePageState extends State<MedicinePage> {
   int _page = 0;
 
-  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
+  final GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {

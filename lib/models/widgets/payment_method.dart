@@ -85,12 +85,12 @@ class _PaymentMethodState extends State<PaymentMethod> {
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(),
               ),
-              child: Padding(
+              child: const Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+                    EdgeInsets.symmetric(horizontal: 16, vertical: 13),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text(
                       'Select Card and Number',
                       style: TextStyle(

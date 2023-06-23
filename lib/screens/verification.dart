@@ -49,7 +49,7 @@ class _VerificationState extends State<Verification> {
                   const SizedBox(height: 30),
 
                   //OTP widget
-                  OtpScreen(),
+                  const OtpScreen(),
                 ],
               ),
             ),

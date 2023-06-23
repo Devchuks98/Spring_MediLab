@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
 class GenderFormField extends StatefulWidget {
+  const GenderFormField({super.key});
+
   @override
   _GenderFormFieldState createState() => _GenderFormFieldState();
 }

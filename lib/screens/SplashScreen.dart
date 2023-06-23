@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:medical_app/screens/GetStarted.dart';
-import 'package:medical_app/models/colors/MyColors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

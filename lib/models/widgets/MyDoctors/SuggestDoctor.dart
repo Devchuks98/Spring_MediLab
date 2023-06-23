@@ -44,8 +44,8 @@ class DocJohn extends StatelessWidget {
               ),
               const SizedBox(width: 40),
               //Doctor rating
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Text(
                     '5.0',
                     style: TextStyle(
@@ -112,8 +112,8 @@ class DocJane extends StatelessWidget {
               const SizedBox(width: 40),
 
               //Doctor rating
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Text(
                     '4.5',
                     style: TextStyle(
@@ -180,8 +180,8 @@ class DocDavid extends StatelessWidget {
               const SizedBox(width: 30),
 
               //Doctor rating
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Text(
                     '3.0',
                     style: TextStyle(
@@ -248,8 +248,8 @@ class DocSarah extends StatelessWidget {
               const SizedBox(width: 40),
 
               //Doctor rating
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Text(
                     '5.0',
                     style: TextStyle(

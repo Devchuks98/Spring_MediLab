@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/screens/WelcomeBack.dart';
 import 'package:medical_app/models/colors/MyColors.dart';
+import 'package:pinput/pinput.dart';
 
 class OtpScreen extends StatefulWidget {
+  const OtpScreen({super.key});
+
   @override
   _OtpScreenState createState() => _OtpScreenState();
 }
@@ -16,23 +19,15 @@ class _OtpScreenState extends State<OtpScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
-          child: TextField(
-            keyboardType: TextInputType.number,
-            maxLength: 4,
-            decoration: const InputDecoration(
-              hintText: 'Enter OTP code',
-              border: OutlineInputBorder(),
-            ),
-            onChanged: (value) {
-              setState(() {
-                _otpCode = value;
-              });
-            },
-          ),
+        //pinput otp input package
+        Pinput(
+          onChanged: (value) {
+            setState(() {
+              _otpCode = value;
+            });
+          },
         ),
-        const SizedBox(height: 15),
+        const SizedBox(height: 30),
         ElevatedButton(
           style: ButtonStyle(
             backgroundColor:

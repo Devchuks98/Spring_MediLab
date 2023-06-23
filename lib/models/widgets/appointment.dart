@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:intl/intl.dart';
 import 'package:medical_app/models/colors/MyColors.dart';
-import 'package:medical_app/models/widgets/calendar.dart';
 import 'package:medical_app/models/widgets/payment_screen.dart';
 import 'package:medical_app/models/widgets/time_selector.dart';
 
@@ -66,11 +65,11 @@ class _AppointmentpageState extends State<Appointmentpage> {
                 const SizedBox(height: 20),
 
                 //select date
-                Padding(
-                  padding: const EdgeInsets.all(15.0),
+                const Padding(
+                  padding: EdgeInsets.all(15.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         'Select Date',
                         style: TextStyle(
@@ -166,11 +165,11 @@ class _AppointmentpageState extends State<Appointmentpage> {
                 const SizedBox(height: 20),
 
                 //select time
-                Padding(
-                  padding: const EdgeInsets.all(15.0),
+                const Padding(
+                  padding: EdgeInsets.all(15.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         'Select Time',
                         style: TextStyle(

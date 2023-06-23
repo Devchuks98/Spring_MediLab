@@ -15,9 +15,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  TextEditingController _searchController = TextEditingController();
+  final TextEditingController _searchController = TextEditingController();
   int _page = 0;
-  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
+  final GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                   SearchField(
                     onSearch: (query) {},
                     searchController: _searchController,
-                    doctorsList: [],
+                    doctorsList: const [],
                   ),
                   const SizedBox(height: 15),
 
@@ -148,14 +148,14 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const SizedBox(height: 15),
                   //Doctor Appointment scroll
-                  SingleChildScrollView(
-                    physics: const BouncingScrollPhysics(),
+                  const SingleChildScrollView(
+                    physics: BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
                     child: Padding(
-                      padding: const EdgeInsets.only(top: 5, bottom: 10),
+                      padding: EdgeInsets.only(top: 5, bottom: 10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
+                        children: [
                           DoctorJane(),
                           SizedBox(width: 10),
                           DoctorDavid(),
@@ -173,8 +173,8 @@ class _HomePageState extends State<HomePage> {
 
                   const SizedBox(height: 30),
                   //suggested doctor
-                  Row(
-                    children: const [
+                  const Row(
+                    children: [
                       Text(
                         'Suggested Doctor',
                         style: TextStyle(
@@ -187,15 +187,15 @@ class _HomePageState extends State<HomePage> {
 
                   const SizedBox(height: 10),
                   //suggested doctors card
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                     child: SingleChildScrollView(
-                      physics: const BouncingScrollPhysics(),
+                      physics: BouncingScrollPhysics(),
                       scrollDirection: Axis.vertical,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 5, bottom: 10),
+                        padding: EdgeInsets.only(top: 5, bottom: 10),
                         child: Column(
-                          children: const [
+                          children: [
                             DocJane(),
                             SizedBox(height: 10),
                             DocDavid(),

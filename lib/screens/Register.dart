@@ -106,7 +106,7 @@ class _RegisterUserState extends State<RegisterUser> {
 
                   const SizedBox(height: 10),
                   //Gender select
-                  GenderFormField(),
+                  const GenderFormField(),
 
                   const SizedBox(height: 20),
                   //Register button
@@ -135,8 +135,8 @@ class _RegisterUserState extends State<RegisterUser> {
                   ),
                   const SizedBox(height: 20),
 
-                  Row(
-                    children: const [
+                  const Row(
+                    children: [
                       Icon(
                         Icons.check_circle,
                         color: Colors.blue,

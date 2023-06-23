@@ -59,10 +59,10 @@ class _PaymentPageState extends State<PaymentPage> {
                   const SizedBox(height: 10),
 
                   //Appointment details
-                  Padding(
-                    padding: const EdgeInsets.all(15.0),
+                  const Padding(
+                    padding: EdgeInsets.all(15.0),
                     child: Row(
-                      children: const [
+                      children: [
                         Text(
                           'Appointment Details',
                           style: TextStyle(
@@ -107,10 +107,10 @@ class _PaymentPageState extends State<PaymentPage> {
                   const SizedBox(height: 10),
 
                   //payment method
-                  Padding(
-                    padding: const EdgeInsets.all(15.0),
+                  const Padding(
+                    padding: EdgeInsets.all(15.0),
                     child: Row(
-                      children: const [
+                      children: [
                         Text(
                           'Payment Method',
                           style: TextStyle(
