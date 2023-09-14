@@ -19,6 +19,7 @@ class SearchField extends StatelessWidget {
         controller: searchController,
         onChanged: onSearch,
         decoration: InputDecoration(
+          isDense: true,
           labelText: 'Search for doctors',
           suffixIcon: const Icon(Icons.search),
           border: OutlineInputBorder(

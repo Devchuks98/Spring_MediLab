@@ -9,8 +9,9 @@ class DoctorJohn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 180,
-      width: 350,
+      padding: const EdgeInsets.all(8),
+      height: 170,
+      width: 310,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: MyColor.primaryColor,
@@ -90,8 +91,9 @@ class DoctorJane extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 180,
-      width: 350,
+      padding: const EdgeInsets.all(8),
+      height: 170,
+      width: 310,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: MyColor.primaryColor,
@@ -171,8 +173,9 @@ class DoctorDavid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 180,
-      width: 350,
+      padding: const EdgeInsets.all(8),
+      height: 170,
+      width: 310,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: MyColor.primaryColor,
@@ -252,8 +255,9 @@ class DoctorSarah extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 180,
-      width: 350,
+      padding: const EdgeInsets.all(8),
+      height: 170,
+      width: 310,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: MyColor.primaryColor,
