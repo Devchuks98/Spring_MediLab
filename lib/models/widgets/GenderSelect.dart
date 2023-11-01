@@ -14,7 +14,9 @@ class _GenderFormFieldState extends State<GenderFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      readOnly: true,
       decoration: InputDecoration(
+        isDense: true,
         labelText: ' Select Gender',
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),

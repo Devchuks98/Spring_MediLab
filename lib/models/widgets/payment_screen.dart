@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:medical_app/models/colors/MyColors.dart';
 import 'package:medical_app/models/widgets/payment_method.dart';
-import 'package:medical_app/screens/Home.dart';
+import 'package:medical_app/screens/home.dart';
 
 class PaymentPage extends StatefulWidget {
   const PaymentPage({super.key});
@@ -133,7 +133,7 @@ class _PaymentPageState extends State<PaymentPage> {
                   ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(
-                          MyColor.primaryColor),
+                          MyColors.primaryColor),
                       fixedSize: MaterialStateProperty.all(const Size(350, 50)),
                     ),
                     onPressed: () {
@@ -143,7 +143,7 @@ class _PaymentPageState extends State<PaymentPage> {
                           return AlertDialog(
                             contentPadding: const EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 40),
-                            backgroundColor: MyColor.primaryColor,
+                            backgroundColor: MyColors.primaryColor,
                             title: const Text(
                               'Appointment Done',
                               style: TextStyle(
@@ -176,14 +176,16 @@ class _PaymentPageState extends State<PaymentPage> {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => const HomePage(),
+                                        builder: (context) => Home(
+                                          onPressedScheduleCard: () {},
+                                        ),
                                       ),
                                     );
                                   },
                                   child: const Text(
                                     'OK',
                                     style: TextStyle(
-                                      color: MyColor.primaryColor,
+                                      color: MyColors.primaryColor,
                                       fontSize: 18,
                                     ),
                                   ),
@@ -206,7 +208,8 @@ class _PaymentPageState extends State<PaymentPage> {
                   OutlinedButton(
                     style: ButtonStyle(
                       side: MaterialStateProperty.all<BorderSide>(
-                        const BorderSide(color: MyColor.primaryColor, width: 2),
+                        const BorderSide(
+                            color: MyColors.primaryColor, width: 2),
                       ),
                       backgroundColor: MaterialStateProperty.all<Color>(
                         Colors.white70,
@@ -222,7 +225,7 @@ class _PaymentPageState extends State<PaymentPage> {
                       'Cancel',
                       style: TextStyle(
                         fontSize: 18,
-                        color: MyColor.primaryColor,
+                        color: MyColors.primaryColor,
                       ),
                     ),
                   ),

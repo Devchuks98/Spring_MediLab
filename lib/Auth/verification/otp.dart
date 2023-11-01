@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:medical_app/models/widgets/button_view.dart';
 import 'package:medical_app/screens/WelcomeBack.dart';
 import 'package:medical_app/models/colors/MyColors.dart';
+import 'package:medical_app/screens/widget.dart';
 import 'package:pinput/pinput.dart';
 
 class OtpScreen extends StatefulWidget {
@@ -28,27 +30,11 @@ class _OtpScreenState extends State<OtpScreen> {
           },
         ),
         const SizedBox(height: 30),
-        ElevatedButton(
-          style: ButtonStyle(
-            backgroundColor:
-                MaterialStateProperty.all<Color>(MyColor.primaryColor),
-            fixedSize: MaterialStateProperty.all(
-              const Size(250, 50),
-            ),
-          ),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const WelcomeBack()),
-            );
-          },
-          child: const Text(
-            'Verify',
-            style: TextStyle(
-              fontSize: 15,
-            ),
-          ),
-        ),
+        ButtonView(
+            onPressed: () {
+              NavigationHelper.navigateToPage(context, const WelcomeBack());
+            },
+            child: const Text("Verify")),
       ],
     );
   }

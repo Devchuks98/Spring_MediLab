@@ -14,7 +14,7 @@ class DoctorJohn extends StatelessWidget {
       width: 310,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: MyColor.primaryColor,
+        color: MyColors.primaryColor,
       ),
       child: Column(
         children: [
@@ -96,7 +96,7 @@ class DoctorJane extends StatelessWidget {
       width: 310,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: MyColor.primaryColor,
+        color: MyColors.primaryColor,
       ),
       child: Column(
         children: [
@@ -178,7 +178,7 @@ class DoctorDavid extends StatelessWidget {
       width: 310,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: MyColor.primaryColor,
+        color: MyColors.primaryColor,
       ),
       child: Column(
         children: [
@@ -260,7 +260,7 @@ class DoctorSarah extends StatelessWidget {
       width: 310,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: MyColor.primaryColor,
+        color: MyColors.primaryColor,
       ),
       child: Column(
         children: [

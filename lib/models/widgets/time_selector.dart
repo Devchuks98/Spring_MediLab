@@ -53,7 +53,7 @@ class _TimeSelectWidgetState extends State<TimeSelectWidget> {
                     ),
                     decoration: BoxDecoration(
                       color: _selectedTime == _times[index]
-                          ? MyColor.primaryColor
+                          ? MyColors.primaryColor
                           : Colors.grey[200],
                       borderRadius: BorderRadius.circular(8),
                     ),

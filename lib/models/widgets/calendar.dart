@@ -129,12 +129,12 @@ class _CustomTableCalendarState extends State<CustomTableCalendar> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Custom Calendar'),
-        backgroundColor: MyColor.primaryColor,
+        backgroundColor: MyColors.primaryColor,
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => _showAddEventDialog(),
         label: const Text('Add Event'),
-        backgroundColor: MyColor.primaryColor,
+        backgroundColor: MyColors.primaryColor,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -173,14 +173,14 @@ class _CustomTableCalendarState extends State<CustomTableCalendar> {
                   titleTextStyle:
                       TextStyle(color: Colors.white, fontSize: 20.0),
                   decoration: BoxDecoration(
-                      color: MyColor.primaryColor,
+                      color: MyColors.primaryColor,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(10),
                           topRight: Radius.circular(10))),
                   formatButtonTextStyle:
                       TextStyle(color: Colors.white, fontSize: 16.0),
                   formatButtonDecoration: BoxDecoration(
-                    color: MyColor.primaryColor,
+                    color: MyColors.primaryColor,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5.0),
                     ),
@@ -207,7 +207,7 @@ class _CustomTableCalendarState extends State<CustomTableCalendar> {
                   weekendTextStyle: TextStyle(color: Colors.red),
                   // highlighted color for today
                   todayDecoration: BoxDecoration(
-                    color: MyColor.primaryColor,
+                    color: MyColors.primaryColor,
                     shape: BoxShape.circle,
                   ),
                   // highlighted color for selected day

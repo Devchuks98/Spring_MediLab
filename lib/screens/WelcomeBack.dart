@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/models/colors/MyColors.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:medical_app/screens/Home.dart';
+import 'package:medical_app/models/widgets/button_view.dart';
+import 'package:medical_app/screens/home.dart';
+import 'package:medical_app/screens/landing_page.dart';
+import 'package:medical_app/screens/widget.dart';
 
 class WelcomeBack extends StatefulWidget {
   const WelcomeBack({super.key});
@@ -21,11 +24,10 @@ class _WelcomeBackState extends State<WelcomeBack> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        resizeToAvoidBottomInset: false,
         body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: SingleChildScrollView(
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
               child: Column(
                 children: [
                   Image.asset(
@@ -97,31 +99,14 @@ class _WelcomeBackState extends State<WelcomeBack> {
                     ),
                   ),
 
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 30),
                   //Register button
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                          MyColor.primaryColor),
-                      fixedSize: MaterialStateProperty.all(
-                        const Size(350, 50),
-                      ),
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const HomePage(),
-                        ),
-                      );
-                    },
-                    child: const Text(
-                      'Login',
-                      style: TextStyle(
-                        fontSize: 17,
-                      ),
-                    ),
-                  ),
+                  ButtonView(
+                      onPressed: () {
+                        NavigationHelper.navigateToPage(
+                            context, const LandingPage());
+                      },
+                      child: const Text("Login")),
                   const SizedBox(height: 20),
 
                   Row(
@@ -147,7 +132,7 @@ class _WelcomeBackState extends State<WelcomeBack> {
                         child: const Text(
                           'Forgot Password',
                           style: TextStyle(
-                            color: MyColor.primaryColor,
+                            color: MyColors.primaryColor,
                           ),
                         ),
                       ),
@@ -165,7 +150,7 @@ class _WelcomeBackState extends State<WelcomeBack> {
                       Container(
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: MyColor.primaryColor,
+                            color: MyColors.primaryColor,
                             width: 1.5,
                           ),
                           borderRadius: BorderRadius.circular(8),
@@ -174,7 +159,7 @@ class _WelcomeBackState extends State<WelcomeBack> {
                         width: 55,
                         child: const Icon(
                           Ionicons.logo_facebook,
-                          color: MyColor.primaryColor,
+                          color: MyColors.primaryColor,
                         ),
                       ),
                       const SizedBox(width: 8),
@@ -182,7 +167,7 @@ class _WelcomeBackState extends State<WelcomeBack> {
                       Container(
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: MyColor.primaryColor,
+                            color: MyColors.primaryColor,
                             width: 1.5,
                           ),
                           borderRadius: BorderRadius.circular(8),
@@ -199,7 +184,7 @@ class _WelcomeBackState extends State<WelcomeBack> {
                       Container(
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: MyColor.primaryColor,
+                            color: MyColors.primaryColor,
                             width: 1.5,
                           ),
                           borderRadius: BorderRadius.circular(10),
@@ -224,7 +209,7 @@ class _WelcomeBackState extends State<WelcomeBack> {
                         child: const Text(
                           'Sign Up',
                           style: TextStyle(
-                            color: MyColor.primaryColor,
+                            color: MyColors.primaryColor,
                           ),
                         ),
                       ),

@@ -25,7 +25,7 @@ class Presciption extends StatelessWidget {
                   color: Colors.blue[50],
                 ),
                 child: IconButton(
-                  color: MyColor.primaryColor,
+                  color: MyColors.primaryColor,
                   onPressed: () {
                     Navigator.push(
                         context,
@@ -58,7 +58,7 @@ class Presciption extends StatelessWidget {
                   color: Colors.blue[50],
                 ),
                 child: IconButton(
-                  color: MyColor.primaryColor,
+                  color: MyColors.primaryColor,
                   icon: const Icon(Icons.local_hospital_rounded),
                   onPressed: () {
                     Navigator.push(
@@ -91,7 +91,7 @@ class Presciption extends StatelessWidget {
                   color: Colors.blue[50],
                 ),
                 child: IconButton(
-                  color: MyColor.primaryColor,
+                  color: MyColors.primaryColor,
                   icon: const Icon(Ionicons.calendar),
                   onPressed: () {
                     Navigator.push(

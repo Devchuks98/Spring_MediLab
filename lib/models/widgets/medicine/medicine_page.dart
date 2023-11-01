@@ -30,31 +30,31 @@ class _MedicinePageState extends State<MedicinePage> {
               Icon(
                 Ionicons.home,
                 size: 25,
-                color: MyColor.primaryColor,
+                color: MyColors.primaryColor,
               ),
               //Calender icon
               Icon(
                 Ionicons.calendar,
                 size: 25,
-                color: MyColor.primaryColor,
+                color: MyColors.primaryColor,
               ),
               //add icon
               Icon(
                 Ionicons.add_circle,
                 size: 25,
-                color: MyColor.primaryColor,
+                color: MyColors.primaryColor,
               ),
               //chat icon
               Icon(
                 Ionicons.chatbubbles,
                 size: 25,
-                color: MyColor.primaryColor,
+                color: MyColors.primaryColor,
               ),
               //person icon
               Icon(
                 Ionicons.person,
                 size: 25,
-                color: MyColor.primaryColor,
+                color: MyColors.primaryColor,
               ),
             ],
             onTap: (index) {

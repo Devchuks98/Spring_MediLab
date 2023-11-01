@@ -121,12 +121,12 @@ class _AppointmentpageState extends State<Appointmentpage> {
                               margin: const EdgeInsets.symmetric(horizontal: 8),
                               decoration: BoxDecoration(
                                 color: _selectedDate == date
-                                    ? MyColor.primaryColor
+                                    ? MyColors.primaryColor
                                     : Colors.white,
                                 borderRadius: BorderRadius.circular(8),
                                 border: Border.all(
                                   color: _selectedDate == date
-                                      ? MyColor.primaryColor
+                                      ? MyColors.primaryColor
                                       : Colors.grey[300]!,
                                 ),
                               ),
@@ -200,7 +200,7 @@ class _AppointmentpageState extends State<Appointmentpage> {
                             horizontal: 16, vertical: 8),
                         decoration: BoxDecoration(
                           color: _isNoonSelected
-                              ? MyColor.primaryColor
+                              ? MyColors.primaryColor
                               : Colors.grey[200],
                           borderRadius: BorderRadius.circular(8),
                         ),
@@ -212,7 +212,7 @@ class _AppointmentpageState extends State<Appointmentpage> {
                               size: 25,
                               color: _isNoonSelected
                                   ? Colors.white
-                                  : MyColor.primaryColor,
+                                  : MyColors.primaryColor,
                             ),
                             Text(
                               'Noon',
@@ -244,7 +244,7 @@ class _AppointmentpageState extends State<Appointmentpage> {
                             horizontal: 16, vertical: 8),
                         decoration: BoxDecoration(
                           color: !_isNoonSelected
-                              ? MyColor.primaryColor
+                              ? MyColors.primaryColor
                               : Colors.grey[200],
                           borderRadius: BorderRadius.circular(8),
                         ),
@@ -255,7 +255,7 @@ class _AppointmentpageState extends State<Appointmentpage> {
                               Icons.cloud,
                               size: 25,
                               color: _isNoonSelected
-                                  ? MyColor.primaryColor
+                                  ? MyColors.primaryColor
                                   : Colors.white,
                             ),
                             Text(
@@ -289,7 +289,7 @@ class _AppointmentpageState extends State<Appointmentpage> {
                 ElevatedButton(
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(MyColor.primaryColor),
+                        MaterialStateProperty.all<Color>(MyColors.primaryColor),
                     fixedSize: MaterialStateProperty.all(
                       const Size(350, 50),
                     ),
